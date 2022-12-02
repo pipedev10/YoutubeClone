@@ -13,6 +13,10 @@
 		9140F4EF2936C74600CF8C18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9140F4ED2936C74600CF8C18 /* Main.storyboard */; };
 		9140F4F12936C74700CF8C18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9140F4F02936C74700CF8C18 /* Assets.xcassets */; };
 		9140F4F42936C74700CF8C18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9140F4F22936C74700CF8C18 /* LaunchScreen.storyboard */; };
+		9140F4FE293A9A5B00CF8C18 /* PlaylistModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9140F4FD293A9A5B00CF8C18 /* PlaylistModel.swift */; };
+		9140F500293AA40400CF8C18 /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9140F4FF293AA40400CF8C18 /* VideoModel.swift */; };
+		9140F502293AA83900CF8C18 /* PlaylistItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9140F501293AA83900CF8C18 /* PlaylistItemModel.swift */; };
+		9140F504293AA88500CF8C18 /* ChannelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9140F503293AA88500CF8C18 /* ChannelModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		9140F4F02936C74700CF8C18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9140F4F32936C74700CF8C18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9140F4F52936C74700CF8C18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9140F4FD293A9A5B00CF8C18 /* PlaylistModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistModel.swift; sourceTree = "<group>"; };
+		9140F4FF293AA40400CF8C18 /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
+		9140F501293AA83900CF8C18 /* PlaylistItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistItemModel.swift; sourceTree = "<group>"; };
+		9140F503293AA88500CF8C18 /* ChannelModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,7 @@
 		9140F4E62936C74600CF8C18 /* YoutubeClone */ = {
 			isa = PBXGroup;
 			children = (
+				9140F4FC293A9A3900CF8C18 /* Model */,
 				9140F4E72936C74600CF8C18 /* AppDelegate.swift */,
 				9140F4E92936C74600CF8C18 /* SceneDelegate.swift */,
 				9140F4EB2936C74600CF8C18 /* ViewController.swift */,
@@ -65,6 +74,17 @@
 				9140F4F52936C74700CF8C18 /* Info.plist */,
 			);
 			path = YoutubeClone;
+			sourceTree = "<group>";
+		};
+		9140F4FC293A9A3900CF8C18 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9140F4FD293A9A5B00CF8C18 /* PlaylistModel.swift */,
+				9140F4FF293AA40400CF8C18 /* VideoModel.swift */,
+				9140F501293AA83900CF8C18 /* PlaylistItemModel.swift */,
+				9140F503293AA88500CF8C18 /* ChannelModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +159,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9140F4EC2936C74600CF8C18 /* ViewController.swift in Sources */,
+				9140F4FE293A9A5B00CF8C18 /* PlaylistModel.swift in Sources */,
 				9140F4E82936C74600CF8C18 /* AppDelegate.swift in Sources */,
+				9140F500293AA40400CF8C18 /* VideoModel.swift in Sources */,
+				9140F502293AA83900CF8C18 /* PlaylistItemModel.swift in Sources */,
 				9140F4EA2936C74600CF8C18 /* SceneDelegate.swift in Sources */,
+				9140F504293AA88500CF8C18 /* ChannelModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
