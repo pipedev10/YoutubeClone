@@ -17,7 +17,7 @@ protocol HomeProviderProtocol {
 class HomeProvider: HomeProviderProtocol {
     
     func getVideos(searchString: String, channelId: String) async throws -> VideoModel {
-        var queryParams: [String: String] = ["part": "snippet"]
+        var queryParams: [String: String] = ["part": "snippet", "type": "video"]
         if !channelId.isEmpty {
             queryParams["channelId"] = channelId
         }
@@ -68,7 +68,7 @@ class HomeProvider: HomeProviderProtocol {
     func getPlaylistItems(playlistId: String) async throws -> PlaylistItemsModel {
         let queryParams: [String: String] = ["part": "snippet,id,contentDetails",
                                              "playlistId": playlistId]
-        let requestModel = RequestModel(endpoint: .playlist, queryItems: queryParams)
+        let requestModel = RequestModel(endpoint: .playlistItems, queryItems: queryParams)
         
         do {
             let model = try await ServiceLayer.callService(requestModel, PlaylistItemsModel.self)

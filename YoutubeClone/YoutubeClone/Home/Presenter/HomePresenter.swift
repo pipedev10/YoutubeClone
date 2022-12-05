@@ -21,7 +21,7 @@ class HomePresenter {
         self.delegate = delegate
     }
     
-    func getVideos() async {
+    func getHomeObjects() async {
         objectList.removeAll()
         
         do {
