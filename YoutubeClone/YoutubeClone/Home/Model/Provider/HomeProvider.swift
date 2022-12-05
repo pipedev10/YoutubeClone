@@ -7,7 +7,12 @@
 
 import Foundation
 
-class HomeProvider {
+protocol HomeProviderProtocol {
+    func getVideos(searchString: String, channelId: String) async throws -> VideoModel
+}
+
+class HomeProvider: HomeProviderProtocol {
+    
     func getVideos(searchString: String, channelId: String) async throws -> VideoModel {
         var queryParams: [String: String] = ["part": "snippet"]
         if !channelId.isEmpty {
