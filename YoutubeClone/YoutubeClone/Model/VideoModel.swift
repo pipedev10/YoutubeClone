@@ -68,13 +68,7 @@ struct VideoModel: Decodable {
             }else{
                 self.statistics = nil
             }
-            
-            
-            
         }
-        
-        
-        
         
         struct VideoId: Decodable{
             let kind : String
