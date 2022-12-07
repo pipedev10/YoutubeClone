@@ -1,0 +1,100 @@
+{
+    "kind": "youtube#searchListResponse",
+    "etag": "G-nZYQQE04djjuXX2pJulfSyeLw",
+    "nextPageToken": "CAIQAA",
+    "regionCode": "CL",
+    "pageInfo": {
+        "totalResults": 169,
+        "resultsPerPage": 2
+    },
+    "items": [
+        {
+            "kind": "youtube#searchResult",
+            "etag": "_o474kLAb2aak3K69M8liStEaAQ",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "IPNhVARjwmQ"
+            },
+            "snippet": {
+                "publishedAt": "2021-03-14T17:16:48Z",
+                "channelId": "UCJDY8-a-C7zyUFsQ7dewC5g",
+                "title": "¡Actualizado 2021! Mira Como Empadronarte en el SISFOH Para Recibir Futuros Bonos del Estado",
+                "description": "*Plataforma SIGTAL para actualizar nuestra Clásificacion Socioeconómica: https://operaciones.sisfoh.gob.pe/sigtal/dondeVives\n\n¡Actualizado 2021! Mira Como Actualizar tu Clasificación Socioeconómico y Empadronarte  en el SISFOH Para Recibir Futuros Bonos del Estado",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/IPNhVARjwmQ/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/IPNhVARjwmQ/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/IPNhVARjwmQ/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/IPNhVARjwmQ/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/IPNhVARjwmQ/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "Psico Master",
+                "liveBroadcastContent": "none",
+                "publishTime": "2021-03-14T17:16:48Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "K5HMnfjkRZn7gn5av2npjFmAU3w",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "xLVoqb51XaU"
+            },
+            "snippet": {
+                "publishedAt": "2021-09-23T16:45:57Z",
+                "channelId": "UCGVjnOcshwruCQmeZ0b5dfw",
+                "title": "BONO TECHO PROPIO 38,500 SOLES: Requisitos, cómo postular y ganar.",
+                "description": "Gobierno anuncia S/ 376 millones para continuidad de Techo Propio y Mivivienda.\n\nSi quieres saber toda la información sobre TECHO PROPIO te dejo esta lista de videos donde te explico todo lo que debes saber:\n\nhttps://youtube.com/playlist?list=PLfqikFL7EsZCVqQ5EW9TCDRyAyVsDoepM\n\nLa continuidad de los programas de vivienda de interés social hasta fin de año está garantizada. El ministro de Vivienda, Construcción y Saneamiento, Geiner Alvarado López, anunció que el Poder Ejecutivo emitirá en breve un decreto supremo que permitirá inyectar al Fondo Mivivienda un total de 376.1 millones de soles que serán destinados a financiar los subsidios del programa Techo Propio (Bono Familiar Habitacional) y del Nuevo Crédito Mivivienda (Bono del Buen Pagador).\n\n“Estos recursos adicionales permitirán que más de 16,000 familias accedan a una vivienda digna y segura en lo que resta del año”, indicó Alvarado López, durante su participación en el \"clic de honor\" de la feria virtual “Días de locura inmobiliaria”.\n\nSegún explicó el ministro, 300 millones de soles de estos recursos adicionales serán destinados al desembolso del BFH en la modalidad Construcción en sitio propio, para 11,363 familias, y 76.1 millones para el BBP correspondiente a 5,097 créditos hipotecarios.\n\nPromoción de la inversión\n\nEn otro momento, Geiner Alvarado indicó ante los representantes de los gremios inmobiliarios del país que el gobierno del presidente Pedro Castillo promueve la participación del sector privado en el rubro inmobiliario y de la construcción.\n\n“Necesitamos la participación y el compromiso del sector privado para llevar viviendas de calidad a más familias peruanas”, indicó el titular del Ministerio de Vivienda, Construcción y Saneamiento (MVCS). “Nuestro gobierno espera tener en el sector privado a un importante aliado en un objetivo que nos debe unir a todos: generar más y mejores viviendas para las familias peruanas”, añadió.\n\n\nTECHO PROPIO\ncompartir\n¿QUÉ ES EL PROGRAMA TECHO PROPIO?\n\nEs un programa dirigido a las familias con ingresos familiares mensuales que no excedan el valor de S/ 3,715 para comprar y S/ 2,706 para construir o mejorar su vivienda, la misma que contará con servicios básicos de luz, agua, desagüe.\n\n¿CUÁL ES EL BENEFICIO DEL PROGRAMA TECHO PROPIO?\n\nEl Bono Familiar Habitacional  - BFH, el cual es un subsidio directo que otorga el Estado a una familia de manera gratuita como premio a su esfuerzo ahorrador y no se devuelve. El valor del Bono varía de acuerdo a la modalidad a la que la familia postule:\n\nPara COMPRAR su vivienda el Bono es de S/ 38,500*\nPara CONSTRUIR su vivienda el Bono puede ser de S/ 26,400*\nPara MEJORAR su vivienda el Bono es de S/  10,120\n*Monto del BFH aprobado por Decreto Supremo N°016-2020-VIVIENDA hasta el 31 de diciembre de 2021.",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/xLVoqb51XaU/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/xLVoqb51XaU/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/xLVoqb51XaU/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/xLVoqb51XaU/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/xLVoqb51XaU/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "FST NEGOCIOS",
+                "liveBroadcastContent": "none",
+                "publishTime": "2021-09-23T16:45:57Z"
+            }
+        }
+    ]
+}
