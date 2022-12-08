@@ -43,6 +43,12 @@
 		9148A60B293F5918002B8203 /* SearchVideos.json in Resources */ = {isa = PBXBuildFile; fileRef = 9148A60A293F5918002B8203 /* SearchVideos.json */; };
 		9148A60D293F59DA002B8203 /* VideoOnlyOne.json in Resources */ = {isa = PBXBuildFile; fileRef = 9148A60C293F59DA002B8203 /* VideoOnlyOne.json */; };
 		9148A60F293F5E2A002B8203 /* MockManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9148A60E293F5E2A002B8203 /* MockManager.swift */; };
+		9148A63A2940AEAD002B8203 /* ChannelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9148A6382940AEAD002B8203 /* ChannelCell.swift */; };
+		9148A63B2940AEAD002B8203 /* ChannelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9148A6392940AEAD002B8203 /* ChannelCell.xib */; };
+		9148A63E2940AED3002B8203 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9148A63C2940AED3002B8203 /* VideoCell.swift */; };
+		9148A63F2940AED3002B8203 /* VideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9148A63D2940AED3002B8203 /* VideoCell.xib */; };
+		9148A6422940AEE8002B8203 /* PlaylistCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9148A6402940AEE8002B8203 /* PlaylistCell.swift */; };
+		9148A6432940AEE8002B8203 /* PlaylistCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9148A6412940AEE8002B8203 /* PlaylistCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +90,12 @@
 		9148A60A293F5918002B8203 /* SearchVideos.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SearchVideos.json; sourceTree = "<group>"; };
 		9148A60C293F59DA002B8203 /* VideoOnlyOne.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = VideoOnlyOne.json; sourceTree = "<group>"; };
 		9148A60E293F5E2A002B8203 /* MockManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockManager.swift; sourceTree = "<group>"; };
+		9148A6382940AEAD002B8203 /* ChannelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelCell.swift; sourceTree = "<group>"; };
+		9148A6392940AEAD002B8203 /* ChannelCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChannelCell.xib; sourceTree = "<group>"; };
+		9148A63C2940AED3002B8203 /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
+		9148A63D2940AED3002B8203 /* VideoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoCell.xib; sourceTree = "<group>"; };
+		9148A6402940AEE8002B8203 /* PlaylistCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistCell.swift; sourceTree = "<group>"; };
+		9148A6412940AEE8002B8203 /* PlaylistCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaylistCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,6 +246,7 @@
 		9140F530293E044F00CF8C18 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9148A6372940AC2F002B8203 /* CustomCell */,
 				9148A5F9293E817C002B8203 /* HomeViewController.swift */,
 				9148A5FA293E817C002B8203 /* HomeViewController.xib */,
 			);
@@ -267,6 +280,19 @@
 				9148A60C293F59DA002B8203 /* VideoOnlyOne.json */,
 			);
 			path = Mock;
+			sourceTree = "<group>";
+		};
+		9148A6372940AC2F002B8203 /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				9148A6382940AEAD002B8203 /* ChannelCell.swift */,
+				9148A6392940AEAD002B8203 /* ChannelCell.xib */,
+				9148A63C2940AED3002B8203 /* VideoCell.swift */,
+				9148A63D2940AED3002B8203 /* VideoCell.xib */,
+				9148A6402940AEE8002B8203 /* PlaylistCell.swift */,
+				9148A6412940AEE8002B8203 /* PlaylistCell.xib */,
+			);
+			path = CustomCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,8 +353,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9148A63F2940AED3002B8203 /* VideoCell.xib in Resources */,
 				9140F524293AF82800CF8C18 /* PlaylistsViewController.xib in Resources */,
 				9148A60B293F5918002B8203 /* SearchVideos.json in Resources */,
+				9148A6432940AEE8002B8203 /* PlaylistCell.xib in Resources */,
 				9148A603293F587C002B8203 /* Channel.json in Resources */,
 				9140F51C293AF71F00CF8C18 /* ChannelsViewController.xib in Resources */,
 				9148A609293F5902002B8203 /* PlaylistItems.json in Resources */,
@@ -336,6 +364,7 @@
 				9148A60D293F59DA002B8203 /* VideoOnlyOne.json in Resources */,
 				9140F4F42936C74700CF8C18 /* LaunchScreen.storyboard in Resources */,
 				9140F4F12936C74700CF8C18 /* Assets.xcassets in Resources */,
+				9148A63B2940AEAD002B8203 /* ChannelCell.xib in Resources */,
 				9140F516293AF6F700CF8C18 /* VideosViewController.xib in Resources */,
 				9148A607293F58C4002B8203 /* Playlists.json in Resources */,
 				9140F4EF2936C74600CF8C18 /* Main.storyboard in Resources */,
@@ -355,14 +384,17 @@
 				9140F4FE293A9A5B00CF8C18 /* PlaylistModel.swift in Sources */,
 				9148A5F4293E073D002B8203 /* HomePresenter.swift in Sources */,
 				9140F523293AF82800CF8C18 /* PlaylistsViewController.swift in Sources */,
+				9148A63E2940AED3002B8203 /* VideoCell.swift in Sources */,
 				9140F515293AF6F700CF8C18 /* VideosViewController.swift in Sources */,
 				9148A5FE293F5672002B8203 /* HomeProviderMock.swift in Sources */,
 				9148A601293F56C3002B8203 /* Utils.swift in Sources */,
 				9140F4E82936C74600CF8C18 /* AppDelegate.swift in Sources */,
 				9140F52B293DFCE200CF8C18 /* RequestModel.swift in Sources */,
+				9148A6422940AEE8002B8203 /* PlaylistCell.swift in Sources */,
 				9140F500293AA40400CF8C18 /* VideoModel.swift in Sources */,
 				9148A60F293F5E2A002B8203 /* MockManager.swift in Sources */,
 				9140F502293AA83900CF8C18 /* PlaylistItemModel.swift in Sources */,
+				9148A63A2940AEAD002B8203 /* ChannelCell.swift in Sources */,
 				9140F4EA2936C74600CF8C18 /* SceneDelegate.swift in Sources */,
 				9148A5F2293E04E1002B8203 /* HomeProvider.swift in Sources */,
 				9140F509293AF4F700CF8C18 /* MainViewController.swift in Sources */,
