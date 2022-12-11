@@ -6,9 +6,11 @@
 //
 
 import UIKit
+import Kingfisher
 
 class ChannelCell: UITableViewCell {
 
+    @IBOutlet weak var bannerImage2: UIImageView!
     @IBOutlet weak var bannerImage: UIImageView!
     @IBOutlet weak var channelInfoLabel: UILabel!
 
@@ -31,6 +33,17 @@ class ChannelCell: UITableViewCell {
         channelInfoLabel.text = model.snippet.description
         channelTitle.text = model.snippet.title
         subscriberNumberLabel.text = "\(model.statistics?.subscriberCount ?? "0") subscribers - \(model.statistics?.videoCount ?? "0") videos"
+        
+        if let bannerUrl = model.brandingSettings?.image.bannerExternalUrl, let url = URL(string: bannerUrl){
+                   bannerImage2.kf.setImage(with: url)
+               }
+               
+               let imageUrl = model.snippet.thumbnails.medium.url
+               
+               guard let url = URL(string: imageUrl) else{
+                   return
+               }
+               profileImage.kf.setImage(with: url)
         
     }
 }

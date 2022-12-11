@@ -113,6 +113,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="bannerImage" destination="7jl-T8-A53" id="pEi-YD-CW4"/>
+                <outlet property="bannerImage2" destination="JTP-KX-7C1" id="Lm8-iL-g41"/>
                 <outlet property="bellImage" destination="HK4-Nw-Hus" id="xal-cw-bfx"/>
                 <outlet property="channelInfoLabel" destination="L9U-99-5QN" id="gfL-X9-reB"/>
                 <outlet property="channelTitle" destination="F7j-G2-d5H" id="79w-71-SKA"/>
