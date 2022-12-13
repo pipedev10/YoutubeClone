@@ -22,6 +22,7 @@ class VideoCell: UITableViewCell {
     
     private func configView() {
         //dotsImage.tintColor
+        selectionStyle = .none
     }
     
     func configCell(model: Any) {
