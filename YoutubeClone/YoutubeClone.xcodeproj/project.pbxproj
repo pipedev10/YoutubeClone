@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		912905FF294819F800991867 /* SectionTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912905FE294819F800991867 /* SectionTitleView.swift */; };
 		9140F4E82936C74600CF8C18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9140F4E72936C74600CF8C18 /* AppDelegate.swift */; };
 		9140F4EA2936C74600CF8C18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9140F4E92936C74600CF8C18 /* SceneDelegate.swift */; };
 		9140F4EC2936C74600CF8C18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9140F4EB2936C74600CF8C18 /* ViewController.swift */; };
@@ -53,6 +54,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		912905FE294819F800991867 /* SectionTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTitleView.swift; sourceTree = "<group>"; };
 		9140F4E42936C74600CF8C18 /* YoutubeClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YoutubeClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9140F4E72936C74600CF8C18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9140F4E92936C74600CF8C18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -293,6 +295,7 @@
 				9148A63D2940AED3002B8203 /* VideoCell.xib */,
 				9148A6402940AEE8002B8203 /* PlaylistCell.swift */,
 				9148A6412940AEE8002B8203 /* PlaylistCell.xib */,
+				912905FE294819F800991867 /* SectionTitleView.swift */,
 			);
 			path = CustomCell;
 			sourceTree = "<group>";
@@ -410,6 +413,7 @@
 				9140F51F293AF7F700CF8C18 /* AboutViewController.swift in Sources */,
 				9148A5FB293E817C002B8203 /* HomeViewController.swift in Sources */,
 				9140F51B293AF71F00CF8C18 /* ChannelsViewController.swift in Sources */,
+				912905FF294819F800991867 /* SectionTitleView.swift in Sources */,
 				9140F504293AA88500CF8C18 /* ChannelModel.swift in Sources */,
 				9140F507293AF4D200CF8C18 /* RootPageViewController.swift in Sources */,
 				9140F52E293DFDBB00CF8C18 /* Constants.swift in Sources */,
