@@ -58,16 +58,28 @@
                             <constraint firstAttribute="width" constant="13" id="jlH-tC-ksm"/>
                         </constraints>
                     </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yyI-ku-l8t">
+                        <rect key="frame" x="356" y="0.0" width="13" height="13"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain"/>
+                        <connections>
+                            <action selector="dotsButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="23C-hb-xxc"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
+                    <constraint firstItem="yyI-ku-l8t" firstAttribute="centerX" secondItem="8Ml-MG-H5v" secondAttribute="centerX" id="1C4-hG-Ygo"/>
                     <constraint firstAttribute="trailing" secondItem="TFA-OI-NQ0" secondAttribute="trailing" constant="14" id="6dC-BO-dwq"/>
                     <constraint firstAttribute="bottom" secondItem="TFA-OI-NQ0" secondAttribute="bottom" constant="14" id="7Lc-EG-AAp"/>
                     <constraint firstItem="TFA-OI-NQ0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="14" id="BSJ-kg-Naj"/>
                     <constraint firstAttribute="trailing" secondItem="8Ml-MG-H5v" secondAttribute="trailing" constant="6" id="PEA-FZ-1p6"/>
                     <constraint firstItem="TFA-OI-NQ0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="R07-cs-MoD"/>
                     <constraint firstItem="8Ml-MG-H5v" firstAttribute="top" secondItem="6Cj-my-NQx" secondAttribute="top" id="XOK-Vq-nSm"/>
+                    <constraint firstItem="yyI-ku-l8t" firstAttribute="centerY" secondItem="8Ml-MG-H5v" secondAttribute="centerY" id="cMD-lu-aRA"/>
+                    <constraint firstItem="yyI-ku-l8t" firstAttribute="width" secondItem="8Ml-MG-H5v" secondAttribute="width" id="eKC-nj-tso"/>
                     <constraint firstItem="8Ml-MG-H5v" firstAttribute="trailing" secondItem="6Cj-my-NQx" secondAttribute="trailing" id="qkx-zK-nS9"/>
+                    <constraint firstItem="yyI-ku-l8t" firstAttribute="height" secondItem="8Ml-MG-H5v" secondAttribute="height" id="wIK-D5-kCq"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

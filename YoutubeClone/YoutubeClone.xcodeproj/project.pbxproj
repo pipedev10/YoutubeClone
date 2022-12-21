@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		912905FF294819F800991867 /* SectionTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912905FE294819F800991867 /* SectionTitleView.swift */; };
+		912906032949DBF700991867 /* BottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912906012949DBF700991867 /* BottomSheetViewController.swift */; };
+		912906042949DBF700991867 /* BottomSheetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 912906022949DBF700991867 /* BottomSheetViewController.xib */; };
+		912906072949E7A900991867 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912906062949E7A900991867 /* UIView+Extension.swift */; };
 		9140F4E82936C74600CF8C18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9140F4E72936C74600CF8C18 /* AppDelegate.swift */; };
 		9140F4EA2936C74600CF8C18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9140F4E92936C74600CF8C18 /* SceneDelegate.swift */; };
 		9140F4EC2936C74600CF8C18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9140F4EB2936C74600CF8C18 /* ViewController.swift */; };
@@ -55,6 +58,9 @@
 
 /* Begin PBXFileReference section */
 		912905FE294819F800991867 /* SectionTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTitleView.swift; sourceTree = "<group>"; };
+		912906012949DBF700991867 /* BottomSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetViewController.swift; sourceTree = "<group>"; };
+		912906022949DBF700991867 /* BottomSheetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottomSheetViewController.xib; sourceTree = "<group>"; };
+		912906062949E7A900991867 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		9140F4E42936C74600CF8C18 /* YoutubeClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YoutubeClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9140F4E72936C74600CF8C18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9140F4E92936C74600CF8C18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -113,6 +119,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		912906002949DB9E00991867 /* BottomSheet */ = {
+			isa = PBXGroup;
+			children = (
+				912906012949DBF700991867 /* BottomSheetViewController.swift */,
+				912906022949DBF700991867 /* BottomSheetViewController.xib */,
+			);
+			path = BottomSheet;
+			sourceTree = "<group>";
+		};
+		912906052949E78300991867 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				912906062949E7A900991867 /* UIView+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		9140F4DB2936C74600CF8C18 = {
 			isa = PBXGroup;
 			children = (
@@ -231,6 +254,7 @@
 		9140F52C293DFDA800CF8C18 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				912906052949E78300991867 /* Extensions */,
 				9148A5FF293F56B0002B8203 /* Mock */,
 				9140F52D293DFDBB00CF8C18 /* Constants.swift */,
 				9148A600293F56C3002B8203 /* Utils.swift */,
@@ -250,6 +274,7 @@
 		9140F530293E044F00CF8C18 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				912906002949DB9E00991867 /* BottomSheet */,
 				9148A6372940AC2F002B8203 /* CustomCell */,
 				9148A5F9293E817C002B8203 /* HomeViewController.swift */,
 				9148A5FA293E817C002B8203 /* HomeViewController.xib */,
@@ -374,6 +399,7 @@
 				9140F520293AF7F700CF8C18 /* AboutViewController.xib in Resources */,
 				9148A60D293F59DA002B8203 /* VideoOnlyOne.json in Resources */,
 				9140F4F42936C74700CF8C18 /* LaunchScreen.storyboard in Resources */,
+				912906042949DBF700991867 /* BottomSheetViewController.xib in Resources */,
 				9140F4F12936C74700CF8C18 /* Assets.xcassets in Resources */,
 				9148A63B2940AEAD002B8203 /* ChannelCell.xib in Resources */,
 				9140F516293AF6F700CF8C18 /* VideosViewController.xib in Resources */,
@@ -391,6 +417,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9140F4EC2936C74600CF8C18 /* ViewController.swift in Sources */,
+				912906072949E7A900991867 /* UIView+Extension.swift in Sources */,
 				9140F529293DFCC400CF8C18 /* NetworkError.swift in Sources */,
 				9140F4FE293A9A5B00CF8C18 /* PlaylistModel.swift in Sources */,
 				9148A5F4293E073D002B8203 /* HomePresenter.swift in Sources */,
@@ -405,6 +432,7 @@
 				9140F500293AA40400CF8C18 /* VideoModel.swift in Sources */,
 				9148A60F293F5E2A002B8203 /* MockManager.swift in Sources */,
 				9140F502293AA83900CF8C18 /* PlaylistItemModel.swift in Sources */,
+				912906032949DBF700991867 /* BottomSheetViewController.swift in Sources */,
 				9148A63A2940AEAD002B8203 /* ChannelCell.swift in Sources */,
 				9140F4EA2936C74600CF8C18 /* SceneDelegate.swift in Sources */,
 				9148A5F2293E04E1002B8203 /* HomeProvider.swift in Sources */,

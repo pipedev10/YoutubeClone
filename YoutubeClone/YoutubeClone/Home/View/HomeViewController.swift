@@ -62,11 +62,17 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             guard let playlistItemCell = tableView.dequeueReusableCell(withIdentifier: "\(VideoCell.self)", for: indexPath) as? VideoCell else {
                 return UITableViewCell()
             }
+            playlistItemCell.didTapoDotsButton = { [weak self] in
+                self?.configButtonSheet()
+            }
             playlistItemCell.configCell(model: playlistItems[indexPath.row])
             return playlistItemCell
         } else if let videos = item as? [VideoModel.Item]{
             guard let videoCell = tableView.dequeueReusableCell(withIdentifier: "\(VideoCell.self)", for: indexPath) as? VideoCell else {
                 return UITableViewCell()
+            }
+            videoCell.didTapoDotsButton = { [weak self] in
+                self?.configButtonSheet()
             }
             videoCell.configCell(model: videos[indexPath.row])
             return videoCell
@@ -75,6 +81,9 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
                 return UITableViewCell()
             }
             playlistCell.configCell(model: playlist[indexPath.row])
+            playlistCell.didTapoDotsButton = { [weak self] in
+                self?.configButtonSheet()
+            }
             return playlistCell
         }
         
@@ -100,6 +109,12 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         sectionView.title.text = sectionTitleList[section]
         sectionView.configView()
         return sectionView
+    }
+    
+    func configButtonSheet() {
+        let vc = BottomSheetViewController()
+        vc.modalPresentationStyle = .overCurrentContext
+        self.present(vc, animated: false)
     }
 }
 
