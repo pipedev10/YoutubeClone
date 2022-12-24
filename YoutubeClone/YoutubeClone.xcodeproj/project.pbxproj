@@ -57,6 +57,9 @@
 		9151DF522957962500FE2D16 /* VideosProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9151DF512957962500FE2D16 /* VideosProvider.swift */; };
 		9151DF542957982600FE2D16 /* VideosProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9151DF532957982600FE2D16 /* VideosProviderMock.swift */; };
 		9151DF5629579E8300FE2D16 /* VideoList.json in Resources */ = {isa = PBXBuildFile; fileRef = 9151DF5529579E8300FE2D16 /* VideoList.json */; };
+		9151DF5B2957A64400FE2D16 /* PlaylistProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9151DF5A2957A64400FE2D16 /* PlaylistProvider.swift */; };
+		9151DF5D2957A66300FE2D16 /* PlaylistProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9151DF5C2957A66300FE2D16 /* PlaylistProviderMock.swift */; };
+		9151DF5F2957A6E000FE2D16 /* PlaylistPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9151DF5E2957A6E000FE2D16 /* PlaylistPresenter.swift */; };
 		91D6A7542944B14500E86B36 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 91D6A7532944B14500E86B36 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
@@ -113,6 +116,9 @@
 		9151DF512957962500FE2D16 /* VideosProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosProvider.swift; sourceTree = "<group>"; };
 		9151DF532957982600FE2D16 /* VideosProviderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosProviderMock.swift; sourceTree = "<group>"; };
 		9151DF5529579E8300FE2D16 /* VideoList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = VideoList.json; sourceTree = "<group>"; };
+		9151DF5A2957A64400FE2D16 /* PlaylistProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistProvider.swift; sourceTree = "<group>"; };
+		9151DF5C2957A66300FE2D16 /* PlaylistProviderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistProviderMock.swift; sourceTree = "<group>"; };
+		9151DF5E2957A6E000FE2D16 /* PlaylistPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,6 +233,8 @@
 		9140F50C293AF68E00CF8C18 /* Playlists */ = {
 			isa = PBXGroup;
 			children = (
+				9151DF572957A55900FE2D16 /* Model */,
+				9151DF592957A56900FE2D16 /* Presenter */,
 				9140F521293AF82800CF8C18 /* PlaylistsViewController.swift */,
 				9140F522293AF82800CF8C18 /* PlaylistsViewController.xib */,
 			);
@@ -361,6 +369,31 @@
 			path = Provider;
 			sourceTree = "<group>";
 		};
+		9151DF572957A55900FE2D16 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9151DF582957A56000FE2D16 /* Provider */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9151DF582957A56000FE2D16 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				9151DF5A2957A64400FE2D16 /* PlaylistProvider.swift */,
+				9151DF5C2957A66300FE2D16 /* PlaylistProviderMock.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		9151DF592957A56900FE2D16 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				9151DF5E2957A6E000FE2D16 /* PlaylistPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -468,6 +501,7 @@
 				9140F4E82936C74600CF8C18 /* AppDelegate.swift in Sources */,
 				9140F52B293DFCE200CF8C18 /* RequestModel.swift in Sources */,
 				9148A6422940AEE8002B8203 /* PlaylistCell.swift in Sources */,
+				9151DF5F2957A6E000FE2D16 /* PlaylistPresenter.swift in Sources */,
 				9140F500293AA40400CF8C18 /* VideoModel.swift in Sources */,
 				9148A60F293F5E2A002B8203 /* MockManager.swift in Sources */,
 				9140F502293AA83900CF8C18 /* PlaylistItemModel.swift in Sources */,
@@ -481,7 +515,9 @@
 				9140F51F293AF7F700CF8C18 /* AboutViewController.swift in Sources */,
 				9148A5FB293E817C002B8203 /* HomeViewController.swift in Sources */,
 				9140F51B293AF71F00CF8C18 /* ChannelsViewController.swift in Sources */,
+				9151DF5B2957A64400FE2D16 /* PlaylistProvider.swift in Sources */,
 				912905FF294819F800991867 /* SectionTitleView.swift in Sources */,
+				9151DF5D2957A66300FE2D16 /* PlaylistProviderMock.swift in Sources */,
 				9140F504293AA88500CF8C18 /* ChannelModel.swift in Sources */,
 				9140F507293AF4D200CF8C18 /* RootPageViewController.swift in Sources */,
 				9140F52E293DFDBB00CF8C18 /* Constants.swift in Sources */,
