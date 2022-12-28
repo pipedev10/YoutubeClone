@@ -60,6 +60,7 @@
 		9151DF61295BA7B600FE2D16 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9151DF60295BA7B600FE2D16 /* UITableView+Extension.swift */; };
 		9151DF63295BAE0000FE2D16 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9151DF62295BAE0000FE2D16 /* UIColor+Extension.swift */; };
 		9151DF65295BAF4100FE2D16 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9151DF64295BAF4100FE2D16 /* UIImage+Extension.swift */; };
+		9151DF67295BC75B00FE2D16 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9151DF66295BC75B00FE2D16 /* BaseViewController.swift */; };
 		91D6A7542944B14500E86B36 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 91D6A7532944B14500E86B36 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
@@ -119,6 +120,7 @@
 		9151DF60295BA7B600FE2D16 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		9151DF62295BAE0000FE2D16 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		9151DF64295BAF4100FE2D16 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		9151DF66295BC75B00FE2D16 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -278,6 +280,7 @@
 				9140F52D293DFDBB00CF8C18 /* Constants.swift */,
 				9148A600293F56C3002B8203 /* Utils.swift */,
 				9148A60E293F5E2A002B8203 /* MockManager.swift */,
+				9151DF66295BC75B00FE2D16 /* BaseViewController.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -467,6 +470,7 @@
 				912906072949E7A900991867 /* UIView+Extension.swift in Sources */,
 				9140F529293DFCC400CF8C18 /* NetworkError.swift in Sources */,
 				9151DF522957962500FE2D16 /* VideosProvider.swift in Sources */,
+				9151DF67295BC75B00FE2D16 /* BaseViewController.swift in Sources */,
 				9140F4FE293A9A5B00CF8C18 /* PlaylistModel.swift in Sources */,
 				9148A5F4293E073D002B8203 /* HomePresenter.swift in Sources */,
 				9140F523293AF82800CF8C18 /* PlaylistsViewController.swift in Sources */,

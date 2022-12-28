@@ -7,15 +7,15 @@
 
 import UIKit
 
-class MainViewController: ViewController {
+class MainViewController: BaseViewController {
 
     var rootPageViewController: RootPageViewController!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        configNavigationBar()
+        navigationController?.hidesBarsOnSwipe = true
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -25,6 +25,9 @@ class MainViewController: ViewController {
         }
     }
 
+    override func dotsButtonPressed() {
+        
+    }
 }
 
 extension MainViewController: RootPageProtocol {
