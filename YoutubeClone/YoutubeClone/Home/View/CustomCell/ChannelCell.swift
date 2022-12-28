@@ -23,8 +23,8 @@ class ChannelCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         selectionStyle = .none
-        bellImage.image = UIImage(named: "bell")?.withRenderingMode(.alwaysTemplate)
-        bellImage.tintColor = UIColor(named: "grayColor")
+        bellImage.image = .bellImage
+        bellImage.tintColor = .grayColor
         profileImage.layer.cornerRadius = 51/2
         profileImage.layer.masksToBounds = true
     }
