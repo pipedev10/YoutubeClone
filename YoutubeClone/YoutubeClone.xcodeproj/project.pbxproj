@@ -61,6 +61,9 @@
 		9151DF63295BAE0000FE2D16 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9151DF62295BAE0000FE2D16 /* UIColor+Extension.swift */; };
 		9151DF65295BAF4100FE2D16 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9151DF64295BAF4100FE2D16 /* UIImage+Extension.swift */; };
 		9151DF67295BC75B00FE2D16 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9151DF66295BC75B00FE2D16 /* BaseViewController.swift */; };
+		9151DF6A295D030B00FE2D16 /* TabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9151DF69295D030B00FE2D16 /* TabsView.swift */; };
+		9151DF6D295D04E200FE2D16 /* OptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9151DF6B295D04E200FE2D16 /* OptionCell.swift */; };
+		9151DF6E295D04E200FE2D16 /* OptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9151DF6C295D04E200FE2D16 /* OptionCell.xib */; };
 		91D6A7542944B14500E86B36 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 91D6A7532944B14500E86B36 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
@@ -121,6 +124,9 @@
 		9151DF62295BAE0000FE2D16 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		9151DF64295BAF4100FE2D16 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		9151DF66295BC75B00FE2D16 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		9151DF69295D030B00FE2D16 /* TabsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsView.swift; sourceTree = "<group>"; };
+		9151DF6B295D04E200FE2D16 /* OptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionCell.swift; sourceTree = "<group>"; };
+		9151DF6C295D04E200FE2D16 /* OptionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OptionCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +214,7 @@
 		9140F505293AF49700CF8C18 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				9151DF68295D02F200FE2D16 /* TabsView */,
 				9140F506293AF4D200CF8C18 /* RootPageViewController.swift */,
 				9140F508293AF4F700CF8C18 /* MainViewController.swift */,
 			);
@@ -373,6 +380,16 @@
 			path = Provider;
 			sourceTree = "<group>";
 		};
+		9151DF68295D02F200FE2D16 /* TabsView */ = {
+			isa = PBXGroup;
+			children = (
+				9151DF69295D030B00FE2D16 /* TabsView.swift */,
+				9151DF6B295D04E200FE2D16 /* OptionCell.swift */,
+				9151DF6C295D04E200FE2D16 /* OptionCell.xib */,
+			);
+			path = TabsView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -437,6 +454,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9151DF6E295D04E200FE2D16 /* OptionCell.xib in Resources */,
 				9148A63F2940AED3002B8203 /* VideoCell.xib in Resources */,
 				9140F524293AF82800CF8C18 /* PlaylistsViewController.xib in Resources */,
 				9148A60B293F5918002B8203 /* SearchVideos.json in Resources */,
@@ -467,6 +485,7 @@
 			files = (
 				9151DF502957960F00FE2D16 /* VideosPresenter.swift in Sources */,
 				9140F4EC2936C74600CF8C18 /* ViewController.swift in Sources */,
+				9151DF6A295D030B00FE2D16 /* TabsView.swift in Sources */,
 				912906072949E7A900991867 /* UIView+Extension.swift in Sources */,
 				9140F529293DFCC400CF8C18 /* NetworkError.swift in Sources */,
 				9151DF522957962500FE2D16 /* VideosProvider.swift in Sources */,
@@ -480,6 +499,7 @@
 				9151DF61295BA7B600FE2D16 /* UITableView+Extension.swift in Sources */,
 				9148A601293F56C3002B8203 /* Utils.swift in Sources */,
 				9140F4E82936C74600CF8C18 /* AppDelegate.swift in Sources */,
+				9151DF6D295D04E200FE2D16 /* OptionCell.swift in Sources */,
 				9140F52B293DFCE200CF8C18 /* RequestModel.swift in Sources */,
 				9148A6422940AEE8002B8203 /* PlaylistCell.swift in Sources */,
 				9140F500293AA40400CF8C18 /* VideoModel.swift in Sources */,
