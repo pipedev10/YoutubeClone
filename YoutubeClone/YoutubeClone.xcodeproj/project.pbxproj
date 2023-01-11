@@ -11,6 +11,9 @@
 		912906032949DBF700991867 /* BottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912906012949DBF700991867 /* BottomSheetViewController.swift */; };
 		912906042949DBF700991867 /* BottomSheetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 912906022949DBF700991867 /* BottomSheetViewController.xib */; };
 		912906072949E7A900991867 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912906062949E7A900991867 /* UIView+Extension.swift */; };
+		912C6A35296E48D000BAE82F /* FloatingPanel in Frameworks */ = {isa = PBXBuildFile; productRef = 912C6A34296E48D000BAE82F /* FloatingPanel */; };
+		912C6A39296E495100BAE82F /* PlayVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912C6A37296E495100BAE82F /* PlayVideoViewController.swift */; };
+		912C6A3A296E495100BAE82F /* PlayVideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 912C6A38296E495100BAE82F /* PlayVideoViewController.xib */; };
 		9140F4E82936C74600CF8C18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9140F4E72936C74600CF8C18 /* AppDelegate.swift */; };
 		9140F4EA2936C74600CF8C18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9140F4E92936C74600CF8C18 /* SceneDelegate.swift */; };
 		9140F4EC2936C74600CF8C18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9140F4EB2936C74600CF8C18 /* ViewController.swift */; };
@@ -72,6 +75,8 @@
 		912906012949DBF700991867 /* BottomSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetViewController.swift; sourceTree = "<group>"; };
 		912906022949DBF700991867 /* BottomSheetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottomSheetViewController.xib; sourceTree = "<group>"; };
 		912906062949E7A900991867 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		912C6A37296E495100BAE82F /* PlayVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayVideoViewController.swift; sourceTree = "<group>"; };
+		912C6A38296E495100BAE82F /* PlayVideoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayVideoViewController.xib; sourceTree = "<group>"; };
 		9140F4E42936C74600CF8C18 /* YoutubeClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YoutubeClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9140F4E72936C74600CF8C18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9140F4E92936C74600CF8C18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -135,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				91D6A7542944B14500E86B36 /* Kingfisher in Frameworks */,
+				912C6A35296E48D000BAE82F /* FloatingPanel in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,6 +165,15 @@
 				9151DF64295BAF4100FE2D16 /* UIImage+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		912C6A36296E491800BAE82F /* PlayVideo */ = {
+			isa = PBXGroup;
+			children = (
+				912C6A37296E495100BAE82F /* PlayVideoViewController.swift */,
+				912C6A38296E495100BAE82F /* PlayVideoViewController.xib */,
+			);
+			path = PlayVideo;
 			sourceTree = "<group>";
 		};
 		9140F4DB2936C74600CF8C18 = {
@@ -188,6 +203,7 @@
 				9140F50B293AF67F00CF8C18 /* Videos */,
 				9140F50A293AF67500CF8C18 /* Home */,
 				9140F505293AF49700CF8C18 /* Main */,
+				912C6A36296E491800BAE82F /* PlayVideo */,
 				9140F4FC293A9A3900CF8C18 /* Model */,
 				9140F4E72936C74600CF8C18 /* AppDelegate.swift */,
 				9140F4E92936C74600CF8C18 /* SceneDelegate.swift */,
@@ -408,6 +424,7 @@
 			name = YoutubeClone;
 			packageProductDependencies = (
 				91D6A7532944B14500E86B36 /* Kingfisher */,
+				912C6A34296E48D000BAE82F /* FloatingPanel */,
 			);
 			productName = YoutubeClone;
 			productReference = 9140F4E42936C74600CF8C18 /* YoutubeClone.app */;
@@ -439,6 +456,7 @@
 			mainGroup = 9140F4DB2936C74600CF8C18;
 			packageReferences = (
 				91D6A7522944B14500E86B36 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				912C6A33296E48D000BAE82F /* XCRemoteSwiftPackageReference "FloatingPanel" */,
 			);
 			productRefGroup = 9140F4E52936C74600CF8C18 /* Products */;
 			projectDirPath = "";
@@ -466,6 +484,7 @@
 				9148A60D293F59DA002B8203 /* VideoOnlyOne.json in Resources */,
 				9140F4F42936C74700CF8C18 /* LaunchScreen.storyboard in Resources */,
 				912906042949DBF700991867 /* BottomSheetViewController.xib in Resources */,
+				912C6A3A296E495100BAE82F /* PlayVideoViewController.xib in Resources */,
 				9140F4F12936C74700CF8C18 /* Assets.xcassets in Resources */,
 				9148A63B2940AEAD002B8203 /* ChannelCell.xib in Resources */,
 				9151DF5629579E8300FE2D16 /* VideoList.json in Resources */,
@@ -494,6 +513,7 @@
 				9148A5F4293E073D002B8203 /* HomePresenter.swift in Sources */,
 				9140F523293AF82800CF8C18 /* PlaylistsViewController.swift in Sources */,
 				9148A63E2940AED3002B8203 /* VideoCell.swift in Sources */,
+				912C6A39296E495100BAE82F /* PlayVideoViewController.swift in Sources */,
 				9140F515293AF6F700CF8C18 /* VideosViewController.swift in Sources */,
 				9148A5FE293F5672002B8203 /* HomeProviderMock.swift in Sources */,
 				9151DF61295BA7B600FE2D16 /* UITableView+Extension.swift in Sources */,
@@ -746,6 +766,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		912C6A33296E48D000BAE82F /* XCRemoteSwiftPackageReference "FloatingPanel" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scenee/FloatingPanel";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 		91D6A7522944B14500E86B36 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
@@ -757,6 +785,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		912C6A34296E48D000BAE82F /* FloatingPanel */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 912C6A33296E48D000BAE82F /* XCRemoteSwiftPackageReference "FloatingPanel" */;
+			productName = FloatingPanel;
+		};
 		91D6A7532944B14500E86B36 /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 91D6A7522944B14500E86B36 /* XCRemoteSwiftPackageReference "Kingfisher" */;
