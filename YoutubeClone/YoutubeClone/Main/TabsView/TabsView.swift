@@ -31,6 +31,17 @@ class TabsView: UIView {
         return collection
     }()
     
+    var underline: UIView = {
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.backgroundColor = .whiteColor
+        return view
+    }()
+    
+    var selectedItem: IndexPath = IndexPath(item: 0, section: 0)
+    var leadingConstraint: NSLayoutConstraint?
+    var widthConstraint: NSLayoutConstraint?
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
     }
@@ -40,8 +51,6 @@ class TabsView: UIView {
         configCollectionView()
     }
     
-    
-    
     private var options: [String] = []
     weak private var delegate: TabsViewProtocol?
     
@@ -49,6 +58,10 @@ class TabsView: UIView {
         self.delegate = delegate
         self.options = options
         collectionView.reloadData()
+        DispatchQueue.main.asyncAfter(deadline: .now()+0.1) {
+            self.configUnderline()
+        }
+        
     }
     
     private func configCollectionView(){
@@ -59,6 +72,26 @@ class TabsView: UIView {
             collectionView.leadingAnchor.constraint(equalTo: leadingAnchor),
             collectionView.trailingAnchor.constraint(equalTo: trailingAnchor)
         ])
+    }
+    
+    func configUnderline(){
+        addSubview(underline)
+        NSLayoutConstraint.activate([
+            underline.heightAnchor.constraint(equalToConstant: 2.0),
+            underline.bottomAnchor.constraint(equalTo: bottomAnchor),
+        ])
+        let currentCell = collectionView.cellForItem(at: selectedItem)!
+        widthConstraint = underline.widthAnchor.constraint(equalToConstant: currentCell.frame.width)
+        widthConstraint?.isActive = true
+        
+        leadingConstraint = underline.leadingAnchor.constraint(equalTo: currentCell.leadingAnchor)
+        leadingConstraint?.isActive = true
+    }
+    
+    func updateUnderline(xOrigin: CGFloat, width: CGFloat) {
+        widthConstraint?.constant = width
+        leadingConstraint?.constant = xOrigin
+        layoutIfNeeded()
     }
 }
 
@@ -71,6 +104,11 @@ extension TabsView: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "\(OptionCell.self)", for: indexPath) as? OptionCell else {
             return UICollectionViewCell()
+        }
+        if indexPath.row == 0 {
+            cell.highlightTitle(.whiteColor)
+        }else{
+            cell.isSelected = (selectedItem.item == indexPath.row)
         }
         cell.configCell(option: options[indexPath.item])
         return cell
